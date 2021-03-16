@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0070)http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Home</title>
+    
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Content/Images/fevicon.png" type="">
+    <title>&gt;Home</title>
+    <link href="./salashidihtml_files/vendor_new.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./salashidihtml_files/flat-admin_new.css">
+    <link href="./salashidihtml_files/StyleSheet.css" rel="stylesheet" type="text/css">
+    <script src="./salashidihtml_files/jquery-1.11.3.min.js.download"></script>
+    <!-- Theme -->
+
+    <link rel="stylesheet" href="./salashidihtml_files/font-awesome.min.css">
+
+
+
+    <script type="text/javascript">
+        function getLearnersPage() {
+
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../Learners/EvaluationForImprovement1?AcademicYearId=0&SelectedTab=link1", '_self', false);
+                    }
+                    else {
+                        if (confirm("You will not be redirected to this page as you have not selected any school for data entry.Click on 'OK' to select a school for data entry.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../Learners/EvaluationForImprovement1?AcademicYearId=0&SelectedTab=link1", '_self', false);
+                }
+            }
+
+
+        }
+        function getTeachersPage() {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../Teacher/TeacherEvaluationForImprovement?AcademicYearId=0&SelectedTab=link1", '_self', false);
+                    }
+                    else {
+                        if (confirm("You will not be redirected to this page as you have not selected any school for data entry.Click on 'OK' to select a school for data entry.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../Teacher/TeacherEvaluationForImprovement?AcademicYearId=0&SelectedTab=link1", '_self', false);
+                }
+            }
+        }
+
+        function getDomainPage(id) {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../Domain" + id + "/Domain" + id + "?AcademicYearId=0", '_self', false);
+                    }
+                    else {
+                        if (confirm("You will not be redirected to this page as you have not selected any school for data entry.Click on 'OK' to select a school for data entry.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../Domain" + id + "/Domain" + id + "?AcademicYearId=0", '_self', false);
+                }
+            }
+        }
+
+
+        function getImprovementPlanPage() {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../School/SchoolImprovementPlan?AcademicYearId=0", '_self', false);
+                    }
+                    else {
+                        if (confirm("You will not be redirected to this page as you have not selected any school for data entry.Click on 'OK' to select a school for data entry.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../School/SchoolImprovementPlan?AcademicYearId=0", '_self', false);
+                }
+            }
+
+        }
+
+        function getHomePage() {
+            window.open("../Common/HomeInstructions", '_self', false);
+        }
+
+        function getReportPage() {
+            window.open("../Reports/SchoolEvaluationDetailsReport?AcademicYearId=0", '_self', false);
+        }
+
+        function getUserManagementPage() {
+            // $.blockUI({ message: $('#domMessage'), css: { backgroundColor: 'Transparent', border: 'none' } });
+            window.open("../UserManagement/CreateUser", '_self', false);
+        }
+
+
+        function getGetDomainDashboardPage() {
+            window.open("../Dashboard/DomainDashboard", '_self', false);
+        }
+
+        function getSendOTP() {
+            window.open("../UserManagement/SendPincodeToUsers", '_self', false);
+        }
+
+        function getChangeAYear() {
+            window.open("../Common/ChangeAcademicYear", '_self', false);
+        }
+
+        function getInbox() {
+            window.open("../UserManagement/UserInboxDetails", '_self', false);
+        }
+
+        function getSchoolDataEntryPage() {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        if (confirm("Do you want to change school or continue with same school for data entry?")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                    else {
+                        window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                    }
+                }
+                else {
+                    window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                }
+            }
+
+            else {
+                window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+            }
+        }
+
+        function getSchoolEvaluationCompositeMatrixPage() {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../Reports/SchoolEvaluationCompositeMatrix?AcademicYearId=0", '_self', false);
+                    }
+                    else {
+                        if (confirm("You cannot view this report as you have not selected any school.Click on 'OK' to select a school for report.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../Reports/SchoolEvaluationCompositeMatrix?AcademicYearId=0", '_self', false);
+                }
+            }
+
+        }
+
+        function getSchoolSelfEvaluationReportPage() {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../Reports/SchoolSelfEvaluationReport?AcademicYearId=0", '_self', false);
+                    }
+                    else {
+                        if (confirm("You cannot view this report as you have not selected any school.Click on 'OK' to select a school for report.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../Reports/SchoolSelfEvaluationReport?AcademicYearId=0", '_self', false);
+                }
+            }
+
+        }
+
+        function getSchoolExternalEvaluationReportPage() {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../Reports/SchoolExternalEvaluationReport?AcademicYearId=0", '_self', false);
+                    }
+                    else {
+                        if (confirm("You cannot view this report as you have not selected any school.Click on 'OK' to select a school for report.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../Reports/SchoolExternalEvaluationReport?AcademicYearId=0", '_self', false);
+                }
+            }
+
+        }
+
+        function getSchoolEvaluationDashboardPage() {
+            var instanceId = document.getElementById("hdnSchoolId").value;
+            var masterUserLevel = document.getElementById("hdnUserLevel").value;
+
+            if (instanceId != null) {
+                if (masterUserLevel != 7) {
+                    if (instanceId.toString().length > 10) {
+                        window.open("../Reports/schoolevaluationdashboard?AcademicYearId=0", '_self', false);
+                    }
+                    else {
+                        if (confirm("You will not be redirected to this page as you have not selected any school for data entry.Click on 'OK' to select a school for data entry.")) {
+                            window.open("../UserManagement/SchoolEvaluationEntryForOtherLevels", '_self', false);
+                        }
+                    }
+                }
+                else {
+                    window.open("../Reports/schoolevaluationdashboard?AcademicYearId=0", '_self', false);
+                }
+            }
+
+        }
+
+    </script>
+
+
+
+</head>
+
+
+<body>
+
+    <form id="form1">
+        <div>
+            <div class="app app-default">
+                <aside class="app-sidebar" id="sidebar">
+                    <div class="sidebar-header">
+                        <a class="sidebar-brand" href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#"><img src="./salashidihtml_files/logo1.png"></a>
+                        <button type="button" class="sidebar-toggle">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar-menu" style="content:&#39;&#39;; display:block; clear:both;">
+                        <ul class="sidebar-nav">
+                            <li class="active">
+                                <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#" class="dropdown-toggle" data-toggle="dropdown" onclick="getHomePage();">
+                                    <div class="icon">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="title">Home</div>
+                                </a>
+                            </li>
+
+                            
+
+                            <li>
+                                <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#" class="dropdown-toggle" data-toggle="dropdown" onclick="getInbox();">
+                                    <div class="icon">
+                                        <i class="fa fa-inbox" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="title">Manage User Request(s)</div>
+                                </a>
+                            </li>
+                                <span style="color:#fff;font-size:12px;font-weight:bold;text-align:center;border-bottom:1px solid #fff;border-top:1px solid #fff;padding-bottom:2px;padding-top:2px;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluation - Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <li class="dropdown">
+                                    <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#" class="dropdown-toggle" data-toggle="dropdown" onclick="getLearnersPage();">
+                                        <div class="icon">
+                                            <i class="fa fa-file-audio-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="title">Learners'</div>
+                                    </a>
+                                    <div class="dropdown-menu" style="top:-20%;">
+                                        <ul>
+
+                                            <li class="section"><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/School/LeanersProfileAndOutcomes?AcademicYearId=0"> Learners' Profile &amp; Learning Outcomes</a></li>
+                                            <li class="section"><i class="fa fa-line-chart" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/School/LearningOutcomesPercentage?AcademicYearId=0">Learning Outcomes (Annual/Consolidated Reports)</a></li>
+                                            <li class="section"><i class="fa fa-book" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/School/PerformanceInKeySubjects?AcademicYearId=0">Performance in Key Subjects (Annual)</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#" class="dropdown-toggle" data-toggle="dropdown" onclick="getTeachersPage();">
+                                        <div class="icon">
+                                            <i class="fa fa-users" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="title">Teachers</div>
+                                    </a>
+                                    <div class="dropdown-menu" style="background-color:#6fa56b; top:0%;">
+                                        <ul>
+
+                                            <li class="section"><i class="fa fa-user-plus" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Teacher/NoOfTeachers?AcademicYearId=0"> Number of Teachers in Each Category</a></li>
+                                            <li class="section"><i class="fa fa-calendar-check-o" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Teacher/TeacherAttendance?AcademicYearId=0"> Teachers' Attendance</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#" class="dropdown-toggle" data-toggle="dropdown" onclick="getGetDomainDashboardPage();">
+                                        <div class="icon">
+                                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="title">School Evaluation Composite Matrix</div>
+                                    </a>
+                                    <div class="dropdown-menu" style="background-color:#1facd5;  top:-80%;">
+                                        <ul>
+
+                                            <li class="section"><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Domain1/Domain1?AcademicYearId=0"> Domain I Info</a></li>
+                                            <li class="section"><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Domain2/Domain2?AcademicYearId=0"> Domain II Info</a></li>
+                                            <li class="section"><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Domain3/Domain3?AcademicYearId=0"> Domain III Info</a></li>
+                                            <li class="section"><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Domain4/Domain4?AcademicYearId=0"> Domain IV Info</a></li>
+                                            <li class="section"><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Domain5/Domain5?AcademicYearId=0"> Domain V Info</a></li>
+                                            <li class="section"><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Domain6/Domain6?AcademicYearId=0"> Domain VI Info</a></li>
+                                            <li class="section"><i class="fa fa-hand-o-right" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Domain7/Domain7?AcademicYearId=0"> Domain VII Info</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#" class="dropdown-toggle" data-toggle="dropdown" onclick="getImprovementPlanPage();">
+                                        <div class="icon">
+                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="title">ACTION FOR CONTINUOUS SCHOOL IMPROVEMENT PLAN</div>
+                                    </a>
+                                </li>
+                                <span style="color:#fff;font-size:12px;font-weight:bold;text-align:center;border-bottom:1px solid #fff;border-top:1px solid #fff;padding-bottom:2px;padding-top:2px;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluation - End&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <li class="dropdown ">
+                                    <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#" class="dropdown-toggle " data-toggle="dropdown" onclick="getReportPage();">
+                                        <div class="icon">
+                                            <i class="fa fa-file-audio-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="title">Reports</div>
+                                    </a>
+                                    <div class="dropdown-menu" style="background-color:#ef8e18;  top:-80%;">
+                                        <ul>
+
+                                            <li class="section"><i class="fa fa-bar-chart" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Reports/SchoolEvaluationCompositeMatrix?AcademicYearId=0">School Evaluation Composite Matrix</a></li>
+                                            <li class="section"><i class="fa fa-file-text" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Reports/SchoolSelfEvaluationReport?AcademicYearId=0">School Self Evaluation Report</a></li>
+                                            <li class="section"><i class="fa fa-pie-chart" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Reports/SchoolExternalEvaluationReport?AcademicYearId=0">School External Evaluation Report</a></li>
+                                            <li class="section"><i class="fa fa-tachometer" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Reports/schoolevaluationdashboard?AcademicYearId=0">School Evaluation Dashboard</a></li>
+                                            <li class="section"><i class="fa fa-line-chart" aria-hidden="true"></i><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Reports/Domainwiseschoolstatus?AcademicYearId=0">Composite Matrix Status Report</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+
+                </aside>
+
+                <script type="text/ng-template" id="sidebar-dropdown.tpl.html">
+                    <div class="dropdown-background">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="dropdown-container">
+                        {{list}}
+                    </div>
+                </script>
+                <div class="app-container">
+                    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-collapse collapse in">
+
+                                <ul class="nav navbar-nav navbar-mobile">
+                                    <li>
+                                        <button type="button" class="sidebar-toggle">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                    </li>
+                                    <li class="logo">
+                                        <a class="navbar-brand" href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/HomeInstructions#">School Evaluation Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="sidebar-toggle">
+                                            <i class="fa fa-power-off"></i>
+                                        </button>
+                                    </li>
+                                    
+                                </ul>
+                                <ul class="nav navbar-nav navbar-left" style="padding-left:200px;">
+                                    <li>
+                                        <img src="./salashidihtml_files/NuepaLogoSmall.png" width="85" height="77">
+                                    </li>
+                                    <li class="navbar-title">
+                                        School Evaluation Dashboard
+                                    </li>
+
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right" style="padding-right:100px;">
+
+                                    
+                                    <li>
+                                        <span style="color: #ececec;text-align:left !important;">
+
+<label for="userName" style="color:#ececec;font-size:11px !important;">Welcome, Krishnaveni</label>    <br>
+<label for="LoggedInTime" style="color:#ececec;;font-size:11px !important;">Today is Saturday, June 17, 2017 9:15:38 PM</label><br>
+<label for="LastLoggedInTime" style="color:#ececec;font-size:11px !important;">Last Login: Saturday, June 17, 2017 9:19:12 PM</label><br>
+                                                <span><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/ChangePasswordForUser"> <i class="fa fa-key" aria-hidden="true" style="font-size:10px;color:white;"></i><span style="font-weight:bold;color:white;font-size:11px;"><u>Change Profile</u></span></a><span style="vertical-align:middle;">&nbsp; | &nbsp;</span><a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Account/Logout"><i class="fa fa-power-off" aria-hidden="true" style="font-size:10px;color:white;"></i><span style="font-weight:bold;color:white;font-size:11px;"><u>Logout</u></span></a></span>
+
+                                        </span>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+
+                    
+
+
+<script src="./salashidihtml_files/jquery-1.10.2.min.js.download"></script>
+<link href="./salashidihtml_files/styles-1.css" rel="stylesheet">
+<link href="./salashidihtml_files/Styles.css" rel="stylesheet">
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        getSchoolEvaluationStatusDetails();
+
+        function getSchoolEvaluationStatusDetails() {
+            var schoolId, academicYearId;
+            if (document.getElementById("hdnUserLevel").value == "7") {
+                document.getElementById("tblSchoolDetailsStatus").setAttribute("style", "display:block;");
+                schoolId = document.getElementById("hdnSchoolId").value;
+                if ($("#ddlAcademicYear option:selected").attr("value") != "") {
+                    academicYearId = $("#ddlAcademicYear option:selected").attr("value");
+                }
+                else {
+                    academicYearId = "";
+                }
+
+                $.ajax({
+                    url: '../Common/GetEvaluationStatusForSchool',
+                    type: 'post', cache: false,
+                    data: {
+
+                        SchoolId: schoolId,
+                        AcademicYearId: academicYearId
+                    },
+                    success: function (response) {
+                        if (response.length > 0) {
+                            designSchoolStatusDetailsGrid(response);
+                        }
+                        else {
+                        }
+                    }
+                });
+
+            }
+            else {
+                document.getElementById("tblSchoolDetailsStatus").setAttribute("style", "display:none;");
+            }
+        }
+
+        function designSchoolStatusDetailsGrid(resultData) {
+
+            $("#tblstaus tbody tr").remove();
+            $.each(resultData, function (i, item) {
+
+                var rows = "<tr>";
+              //  rows = rows + "<td  class='td'  colspan='8'>&nbsp;</td></tr><tr>";
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.DemographicProfileStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png' width='20px' height='20px' title='Demographic Profile(Learners Profile & Learning Outcomes)' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png' width='20px' height='20px' title='Demographic Profile(Learners Profile & Learning Outcomes)'  />";
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%'  class='td' align='center'>";
+                if (item.ClasswiseAttendanceStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png' width='20px' height='20px' title='Classwise Annual Attendance Rate #(Learners Profile & Learning Outcomes)' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png' width='20px' height='20px' title='Classwise Annual Attendance Rate #(Learners Profile & Learning Outcomes)' />";
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.LearningOutcomesStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Learning Outcomes(Annual/Consolidated Reports)' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px' title='Learning Outcomes(Annual/Consolidated Reports)' />";
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.PerformanceInKeySubjectsStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Performance In Key Subjects(Annual)' />";
+                }
+                else if (item.PerformanceInKeySubjectsStatus == "-1") {
+                    rows = rows + "<img src='../Content/Images/not-applicable.png'  width='20px' height='20px'  title='Performance In Key Subjects(Annual)' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png' width='20px' height='20px'  title='Performance In Key Subjects(Annual)' />";
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.TeacherProfileStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png' width='20px' height='20px'  title='Number of teachers in each category' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png' width='20px' height='20px'  title='Number of teachers in each category' />";
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.TeacherAttendanceStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png' width='20px' height='20px'  title='Teachers Attendance' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Teachers Attendance' />";
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.Domain1Status == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Domain I' />";
+                }
+                else {
+                    if (item.Domain1Status == "In Progress") {
+                        rows = rows + "<img src='../Content/Images/InProgress_new.png'  width='20px' height='20px'  title='Domain I' />";
+                    }
+                    else {
+                        rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Domain I' />";
+                    }
+                    
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.Domain2Status == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Domain II' />";
+                }
+                else {
+                    if (item.Domain2Status == "In Progress") {
+                        rows = rows + "<img src='../Content/Images/InProgress_new.png'  width='20px' height='20px'  title='Domain II' />";
+                    }
+                    else {
+                        rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Domain II' />";
+                    }
+
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='6%' class='td' align='center'>";
+                if (item.Domain3Status == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Domain III' />";
+                }
+                else {
+                    if (item.Domain3Status == "In Progress") {
+                        rows = rows + "<img src='../Content/Images/InProgress_new.png'  width='20px' height='20px'  title='Domain III' />";
+                    }
+                    else {
+                        rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Domain III' />";
+                    }
+
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='6%' class='td' align='center'>";
+                if (item.Domain4Status == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Domain IV' />";
+                }
+                else {
+                    if (item.Domain4Status == "In Progress") {
+                        rows = rows + "<img src='../Content/Images/InProgress_new.png'  width='20px' height='20px'  title='Domain IV' />";
+                    }
+                    else {
+                        rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Domain IV' />";
+                    }
+
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='6%' class='td' align='center'>";
+                if (item.Domain5Status == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Domain V' />";
+                }
+                else {
+                    if (item.Domain5Status == "In Progress") {
+                        rows = rows + "<img src='../Content/Images/InProgress_new.png'  width='20px' height='20px'  title='Domain V' />";
+                    }
+                    else {
+                        rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Domain V' />";
+                    }
+
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='6%' class='td' align='center'>";
+                if (item.Domain6Status == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Domain VI' />";
+                }
+                else {
+                    if (item.Domain6Status == "In Progress") {
+                        rows = rows + "<img src='../Content/Images/InProgress_new.png'  width='20px' height='20px'  title='Domain VI' />";
+                    }
+                    else {
+                        rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Domain VI' />";
+                    }
+
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='6%' class='td' align='center'>";
+                if (item.Domain7Status == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Domain VII' />";
+                }
+                else {
+                    if (item.Domain7Status == "In Progress") {
+                        rows = rows + "<img src='../Content/Images/InProgress_new.png'  width='20px' height='20px'  title='Domain VII' />";
+                    }
+                    else {
+                        rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Domain VII' />";
+                    }
+
+                }
+                rows = rows + "</td>";
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.MissionStmtStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png'  width='20px' height='20px'  title='Mission Statement' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png'  width='20px' height='20px'  title='Mission Statement' />";
+                }
+                rows = rows + "</td>";
+
+
+                rows = rows + "<td width='7%' class='td' align='center'>";
+                if (item.ImprovementPlanStatus == "Completed") {
+                    rows = rows + "<img src='../Content/Images/Done_New.png' width='20px' height='20px'   title='Improvement Plan' />";
+                }
+                else {
+                    rows = rows + "<img src='../Content/Images/NotStarted_New.png' width='20px' height='20px'   title='Improvement Plan' />";
+                }
+                rows = rows + "<br></td>";
+
+
+                rows = rows + "</tr>";
+               // rows = rows + "<tr><td  class='td' colspan='8'>&nbsp;</td></tr>"
+                $('#tblstaus tbody').append(rows);
+            });
+        }
+
+        $(document).on("click", ".imgFinal", function () {
+            if (confirm("Once you do final submit, you will not be allowed to change evaluation data in future. Are you sure you want to submit data finally?")) {
+                var serviceURL = '../common/SaveFinalSubmissionDetails';
+                $.ajax({
+                    type: "POST",
+                    url: serviceURL,
+                    dataType: "text",
+
+                    success: function (d) {
+                        if (d == "1") {
+                            document.getElementById("imgDoFinal").setAttribute("style", "display:none;");
+                            document.getElementById("imgFinalDone").setAttribute("style", "display:block;");
+                            document.getElementById("imgFinalNotDone").setAttribute("style", "display:none;");
+                            alert("School data has been submitted successfully.");
+                        }
+                        else {
+                            alert("Some error has occured while doing final data submission.");
+                        }
+                    }
+                });
+            }
+        });
+    });
+
+
+
+</script>
+<div class="page-header filled full-block light" style="margin-top:100px;margin-left:50px;">
+
+    <div class="row" id="tblSchoolDetailsStatus" style="display:block;">
+
+
+
+<script src="./salashidihtml_files/jquery-1.12.4.min.js.download"></script>
+<link href="./salashidihtml_files/styles-1.css" rel="stylesheet">
+<link href="./salashidihtml_files/Styles.css" rel="stylesheet">
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var userEmail, userMobile, IsUserFilledAllData, userFinalSubmission, userLevel, academicYearId;
+
+        userMobile = document.getElementById("hdnUserMobile").value;
+        userEmail = document.getElementById("hdnUserEmail").value;
+        userLevel = document.getElementById("hdnUserLevel").value;
+        academicYearId = document.getElementById("hdnAcademicYearId").value;
+
+        if (userLevel == "7") {
+            userFinalSubmission = document.getElementById("hdnFinalSubmission").value;
+            IsUserFilledAllData = document.getElementById("hdnIsDataFilled").value;
+        }
+        else {
+            userFinalSubmission = "";
+        }
+
+        var notificationMsg = "";
+
+        if (userEmail == "" && userMobile == "") {
+            if (notificationMsg == "") {
+                notificationMsg = "Please update your Mobile No. and Email Id using Change Profile Option or <a href='../Common/ChangePasswordForUser'>Click here</a>.";
+            }
+        }
+        else {
+            if (userEmail == "" && userMobile != "") {
+                if (notificationMsg == "") {
+                    notificationMsg = "Please update your Email Id using Change Profile Option or <a href='../Common/ChangePasswordForUser'>Click here</a>.";
+                }
+                else {
+                    notificationMsg = notificationMsg + "&nbsp;&nbsp;&nbsp;&nbsp; Please update your Email Id using Change Profile Option or <a href='../Common/ChangePasswordForUser'>Click here</a>.";
+                }
+            }
+            else if (userEmail != "" && userMobile == "") {
+                if (notificationMsg == "") {
+                    notificationMsg = "Please update your Mobile No. using Change Profile Option or <a href='../Common/ChangePasswordForUser'>Click here</a>.";
+                }
+                else {
+                    notificationMsg = notificationMsg + "&nbsp;&nbsp;&nbsp;&nbsp; Please update your Mobile No. using Change Profile Option or <a href='../Common/ChangePasswordForUser'>Click here</a>.";
+                }
+            }
+            else {
+            }
+        }
+        if (userFinalSubmission != "") {
+            if (userFinalSubmission == "0") {
+                if (IsUserFilledAllData == "1") {
+                    if (notificationMsg == "") {
+                        notificationMsg = "Please do final submit as you have filled all the details (<a href='../School/SchoolImprovementPlan?AcademicYearId=" + academicYearId + "'>Click here</a> or use <img src='../Content/Images/ClickHere-3.gif' width='80px' height='15px' title='Final Submit'  /> option in Home Page).";
+                    }
+                    else {
+                        notificationMsg = notificationMsg + "&nbsp;&nbsp;&nbsp;&nbsp; Please do final submit as you have filled all the details (<a href='../School/SchoolImprovementPlan?AcademicYearId=" + academicYearId + "'>Click here</a> or use <img src='../Content/Images/ClickHere-3.gif' width='80px' height='15px' title='Final Submit'  /> option in Home Page).";
+                    }
+                }
+                else {
+                    if (notificationMsg == "") {
+                        notificationMsg = "Your data evaluation will be considered if you fill all the details with final submission.";
+                    }
+                    else {
+                        notificationMsg = notificationMsg + "&nbsp;&nbsp;&nbsp;&nbsp; Your data evaluation will be considered if you fill all the details with final submission.";
+                    }
+                }
+            }
+
+        }
+
+
+        if (notificationMsg != "") {
+            document.getElementById("lblForUser").innerHTML = notificationMsg;
+        }
+    });
+
+</script>
+
+<input type="hidden" id="hdnUserMobile" value="9701728350">
+<input type="hidden" id="hdnUserEmail" value="">
+<input type="hidden" id="hdnUserName" value="28131802904">
+<input type="hidden" id="hdnUserLevel" value="7">
+<input type="hidden" id="hdnAcademicYearId" value="5">
+        <input type="hidden" id="hdnFinalSubmission" value="0">
+        <input type="hidden" id="hdnIsDataFilled" value="1">
+
+
+
+<table width="90%">
+    <tbody><tr>
+        <td>
+            <marquee direction="right"></marquee>
+
+            <marquee behavior="scroll" direction="left" onmouseup="this.setAttribute(&#39;scrollamount&#39;, 3, 0);" onmouseover="this.setAttribute(&#39;scrollamount&#39;, 0, 0);" onmouseout="this.setAttribute(&#39;scrollamount&#39;, 3, 0);" scrollamount="3"><label id="lblForUser" style="font-style:calibri;font-size:12px;font-weight:bold;color:brown;">Please update your Email Id using Change Profile Option or <a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/Common/ChangePasswordForUser">Click here</a>.&nbsp;&nbsp;&nbsp;&nbsp; Please do final submit as you have filled all the details (<a href="http://www.shaalasiddhi.nuepa.org/Shaalasiddhi/School/SchoolImprovementPlan?AcademicYearId=5">Click here</a> or use <img src="./salashidihtml_files/ClickHere-3.gif" width="80px" height="15px" title="Final Submit"> option in Home Page).</label></marquee>
+
+        </td>
+    </tr>
+</tbody></table>
+
+        <input id="hdnSchoolId" name="hdnSchoolId" type="hidden" value="28131802904">
+        <input id="hdnUserLevel" name="hdnUserLevel" type="hidden" value="7">
+            <h2 style="text-align:center; color:#92298e ; font-family:Calibri; font-size:25px; font-weight:bold; text-transform: uppercase;">School Self-Evaluation Status</h2>
+            <br>
+            <table width="90%" cellpadding="0" cellspacing="0">
+
+                <tbody><tr>
+                    <td class="pplBG-1">
+
+                        <span>
+                            &nbsp;&nbsp;School Self-Evaluation Status
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody></table>
+            <table width="90%" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td class="td">
+                        <div>
+                            <table>
+                                <tbody><tr>
+                                    <td width="10%" align="right"> School Name :&nbsp;&nbsp;</td>
+                                    <td width="20%">
+<label for="SchoolName">MPPS Rongalipalem</label>
+
+                                    </td>
+                                    <td width="15%" align="right">
+                                        Academic Year :&nbsp;&nbsp;
+                                    </td>
+                                    <td width="20%">
+                                        <select class="Dropdown" disabled="true" id="ddlAcademicYear" name="ddlAcademicYear"><option value="">-----Select-----</option>
+<option value="1">2015-16</option>
+<option selected="selected" value="5">2016-17</option>
+</select>
+                                    </td>
+                                    <td width="25%" align="right">
+                                        Is Final Submission Done?
+                                    </td>
+                                    <td width="15%" align="center">
+                                                <img src="./salashidihtml_files/NotStarted_New.png" width="20px" height="20px" title="Final Submission Not Started" id="imgFinalNotDone">
+                                                    <img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Final Submission Done" style="display:none;" id="imgFinalDone">
+                                                    <img src="./salashidihtml_files/ClickHere-3.gif" width="80px" height="20px" title="Final Submit" class="imgFinal" id="imgDoFinal">
+                                    </td>
+                                </tr>
+
+                            </tbody></table>
+                            <br>
+                            <table align="center" id="tblstaus" width="100%">
+                                <thead>
+                                    <tr>
+                                        <td colspan="4" align="center" style="height:30px;background-color:#92298e;text-align:center !important;color:#fff;border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                                            Learners'
+                                        </td>
+                                        <td colspan="2" align="center" style="height:30px;background-color:#6fa56b;text-align:center !important;color:#fff;border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                                            Teachers'
+                                        </td>
+                                        <td colspan="7" align="center" style="height:30px;background-color:#1facd5;text-align:center !important;color:#fff;border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                                            School Composition Matrix
+                                        </td>
+                                        <td colspan="2" align="center" style="height:30px;background-color:#e6993c;text-align:center !important;color:#fff;border-right:1px solid #fff;border-bottom:1px solid #fff;">
+                                            School Improvement Plan
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody><tr><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Demographic Profile(Learners Profile &amp; Learning Outcomes)"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Classwise Annual Attendance Rate #(Learners Profile &amp; Learning Outcomes)"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Learning Outcomes(Annual/Consolidated Reports)"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/not-applicable.png" width="20px" height="20px" title="Performance In Key Subjects(Annual)"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Number of teachers in each category"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Teachers Attendance"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Domain I"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Domain II"></td><td width="6%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Domain III"></td><td width="6%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Domain IV"></td><td width="6%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Domain V"></td><td width="6%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Domain VI"></td><td width="6%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Domain VII"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Mission Statement"></td><td width="7%" class="td" align="center"><img src="./salashidihtml_files/Done_New.png" width="20px" height="20px" title="Improvement Plan"><br></td></tr></tbody>
+                            </table>
+                       
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+            <br>
+            <table width="90%">
+                <tbody><tr>
+                    <td style="font-family:Calibri;font-size:12px;">
+                       <b>Note :</b> <img src="./salashidihtml_files/Done_New.png" width="20px" height="20px"> : Completed
+                        &nbsp;&nbsp;
+                        <img src="./salashidihtml_files/InProgress_new.png" width="20px" height="20px"> : In Progress
+                        &nbsp;&nbsp;
+                        <img src="./salashidihtml_files/NotStarted_New.png" width="20px" height="20px"> : Not Started
+                        &nbsp;&nbsp;
+                        <img src="./salashidihtml_files/not-applicable.png" width="20px" height="20px"> : Not Applicable
+                    </td>
+                </tr>
+            </tbody></table>
+    </div>
+    <div class="row">
+        
+        <br>
+        <table width="90%" cellpadding="0" cellspacing="0">
+
+            <tbody><tr>
+                <td class="pplBG-1">
+
+                    <span style="font-size:20px;">
+                        &nbsp;&nbsp;Instructions for uploading Self Evaluation Dashboard
+                    </span>
+                </td>
+            </tr>
+
+        </tbody></table>
+        <table width="90%" cellpadding="0" cellspacing="0" id="tblcw">
+            <tbody><tr>
+                <td class="td">
+                    <br>
+                    
+                    <br>
+                    <b>Imp Note:</b> This website should be used only by authorized personnel of the school.
+                    <br>
+                    <br>
+                    1. Please save your login Id, Password and PIN (OTP) for any future use.<br><br>
+                    2. Please fill up all the components of the Dashboard.<br><br>
+                    3. You can click on the ICON on the left hand of your screen and sequentially fill up the Dashboard.<br><br>
+                    4. After completing the process, press final submission.<br><br>
+                    5. Remember, after final submission, you cannot edit or change any information of the Dashboard.<br><br>
+                </td>
+            </tr>
+
+        </tbody></table>
+    </div>
+</div>
+
+                </div>
+
+            </div>
+            <footer class="footer-container navbar-fixed-bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div style="text-align:center;">
+                                <span>National University of Educational Planning and Administration. All Rights Reserved @2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <!--Topbar Start Here-->
+    <script type="text/javascript" src="./salashidihtml_files/vendor_New.js.download"></script>
+    <script type="text/javascript" src="./salashidihtml_files/app_New.js.download"></script>
+    
+
+</body></html>
